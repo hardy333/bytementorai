@@ -1,0 +1,24 @@
+.logo-a {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+}
+
+.logo-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-image: linear-gradient(to bottom right, #191b1f, #121417);
+  border-radius: 10px;
+  border: 0.0625rem solid;
+  border-color: #191b1f;
+  margin-right: 5px;
+}
+
+.logo-box svg {
+  width: 70%;
+  height: 70%;
+}
