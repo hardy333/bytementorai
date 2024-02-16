@@ -1,0 +1,7 @@
+body {
+}
+
+.profile-section-img-container {
+  background: url(../theme/dist/assets/images/background/profile-bg.jpg)
+    no-repeat;
+}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import "./navbar.css";
+import { UserButton, auth, currentUser } from "@clerk/nextjs";
 
 export const NavbarLogo = () => (
   <a className="navbar-brand items-center text-primary logo-a" href="#">
@@ -10,7 +11,10 @@ export const NavbarLogo = () => (
   </a>
 );
 
-const Navbar = async () => {
+const Navbar2 = async () => {
+  const user = await currentUser();
+  const { userId } = auth();
+
   return (
     <nav className="navbar navbar-expand-lg ">
       <NavbarLogo />
@@ -92,18 +96,7 @@ const Navbar = async () => {
                 </li>
               </ul>
             </div>
-            <Link
-              href="/profile"
-              className="btn btn-outline-primary shadow-sm me-2 d-none d-md-block"
-            >
-              Sign In
-            </Link>
-            <Link
-              href="/profile"
-              className="btn btn-primary d-none d-md-block me-2 me-lg-0"
-            >
-              Sign Up
-            </Link>
+            <UserButton afterSignOutUrl="/" />
           </div>
         </div>
       </div>
@@ -122,7 +115,7 @@ const Navbar = async () => {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav ">
-          <li className="nav-item active">
+          {/* <li className="nav-item active">
             <Link className="nav-link" href="/">
               Home <span className="visually-hidden">(current)</span>
             </Link>
@@ -141,6 +134,11 @@ const Navbar = async () => {
             <Link className="nav-link " href="/blog">
               Blog
             </Link>
+          </li> */}
+          <li>
+            <Link className="nav-link" href="/profile">
+              Cources
+            </Link>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0 me-auto">
@@ -157,7 +155,7 @@ const Navbar = async () => {
   );
 };
 
-export default Navbar;
+export default Navbar2;
 
 const Logo = () => (
   <svg
