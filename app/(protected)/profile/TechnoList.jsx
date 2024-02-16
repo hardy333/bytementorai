@@ -2,6 +2,14 @@
 
 import { useRouter } from "next/navigation";
 
+import html from "../../imgs/html.svg";
+import css from "../../imgs/css.svg";
+import javascript from "../../imgs/javascript.svg";
+import bootstrap from "../../imgs/bootstrap.svg";
+import gatsby from "../../imgs/gatsby.svg";
+import react from "../../imgs/react.svg";
+import angular from "../../imgs/angular.svg";
+
 const TechnoList = () => {
   const router = useRouter();
 
@@ -49,11 +57,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img
-                      src="../../theme/dist/assets/images/path/path-html.svg"
-                      alt="html"
-                      className="avatar-md"
-                    />
+                    <img src={html} alt="html" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -85,11 +89,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img
-                      src="../../assets/images/path/path-css.svg"
-                      alt="css"
-                      className="avatar-md"
-                    />
+                    <img src={css} alt="css" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -122,7 +122,7 @@ const TechnoList = () => {
                 <div className="d-flex">
                   <a href="course-path-single.html">
                     <img
-                      src="../../assets/images/path/path-javascript.svg"
+                      src={javascript}
                       alt="javascript"
                       className="avatar-md"
                     />
@@ -158,7 +158,7 @@ const TechnoList = () => {
                 <div className="d-flex">
                   <a href="course-path-single.html">
                     <img
-                      src="../../assets/images/path/path-bootstrap.svg"
+                      src={bootstrap}
                       alt="bootstrap"
                       className="avatar-md"
                     />
@@ -193,11 +193,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img
-                      src="../../assets/images/path/path-angular.svg"
-                      alt="angularjs"
-                      className="avatar-md"
-                    />
+                    <img src={angular} alt="angular" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -229,11 +225,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img
-                      src="../../assets/images/path/path-gatsby.svg"
-                      alt="getsby"
-                      className="avatar-md"
-                    />
+                    <img src={gatsby} alt="gatsby" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -264,11 +256,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img
-                      src="../../assets/images/path/path-react.svg"
-                      alt="react"
-                      className="avatar-md"
-                    />
+                    <img src={react} alt="react" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
