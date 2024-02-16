@@ -58,19 +58,25 @@ const customizedContent = (item) => {
             </div>
             <div className="d-flex gap-2">
               <Link
-                href="/training/html/theory"
+                href={`/training/html/theory?topic=${item.name
+                  .split(" ")
+                  .join("-")}`}
                 className="btn btn-light-primary text-primary"
               >
                 Theory
               </Link>
               <Link
-                href="/training/html/quiz"
+                href={`/training/html/quiz?topic=${item.name
+                  .split(" ")
+                  .join("-")}`}
                 className="btn btn-light-success text-success"
               >
                 Quiz
               </Link>
               <Link
-                href="/training/html/tasks"
+                href={`/training/html/tasks?topic=${item.name
+                  .split(" ")
+                  .join("-")}`}
                 className="btn btn-light-warning text-warning"
               >
                 Tasks

@@ -1,0 +1,12 @@
+.chat-message {
+  display: flex;
+  margin-inline: -24px;
+  margin-bottom: 20px;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+.chat-message p {
+  margin: 0;
+}
