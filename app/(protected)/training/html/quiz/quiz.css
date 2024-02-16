@@ -1,0 +1,8 @@
+.form-check-input.correct:checked {
+  background-color: green;
+  border-color: green;
+}
+.form-check-input.incorrect:checked {
+  background-color: red;
+  border-color: red;
+}

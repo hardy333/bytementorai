@@ -43,31 +43,34 @@ const TechnoList = () => {
             onClick={() => {
               router.push("/training/html");
             }}
-            class="col-xl-4 col-lg-6 col-md-6 col-12"
+            className="col-xl-4 col-lg-6 col-md-6 col-12"
           >
-            <div class="card mb-4 card-hover">
-              <div class="d-flex justify-content-between align-items-center p-4">
-                <div class="d-flex">
+            <div className="card mb-4 card-hover">
+              <div className="d-flex justify-content-between align-items-center p-4">
+                <div className="d-flex">
                   <a href="course-path-single.html">
                     <img
                       src="../../theme/dist/assets/images/path/path-html.svg"
                       alt="html"
-                      class="avatar-md"
+                      className="avatar-md"
                     />
                   </a>
-                  <div class="ms-3">
-                    <h4 class="mb-1">
-                      <a href="course-path-single.html" class="text-inherit">
+                  <div className="ms-3">
+                    <h4 className="mb-1">
+                      <a
+                        href="course-path-single.html"
+                        className="text-inherit"
+                      >
                         HTML
                       </a>
                     </h4>
-                    <p class="mb-0 fs-6">
-                      <span class="me-2">
-                        <span class="text-dark fw-medium">12</span>
+                    <p className="mb-0 fs-6">
+                      <span className="me-2">
+                        <span className="text-dark fw-medium">12</span>
                         Courses
                       </span>
                       <span>
-                        <span class="text-dark fw-medium">34</span>
+                        <span className="text-dark fw-medium">34</span>
                         Hours
                       </span>
                     </p>
