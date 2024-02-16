@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import React from "react";
 import Chat from "./Chat";
+import BackArrowComp from "../../BackArrowComp";
 
 const HtmlTheory = () => {
   const searchParams = useSearchParams();
@@ -16,6 +17,7 @@ const HtmlTheory = () => {
         paddingBottom: 50,
       }}
     >
+      <BackArrowComp />
       <div className="container">
         <div
           style={{ alignItems: "center" }}

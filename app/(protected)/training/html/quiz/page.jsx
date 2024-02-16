@@ -5,6 +5,7 @@ import QuizSection from "./QuizSection";
 import { useSearchParams } from "next/navigation";
 import Loader from "@/app/components/Loader";
 import toast from "react-hot-toast";
+import BackArrowComp from "../../BackArrowComp";
 
 const HtmlQuiz = () => {
   const [isQuizing, setisQuizing] = useState(false);
@@ -26,9 +27,11 @@ const HtmlQuiz = () => {
       clearTimeout(t);
     };
   }, [isGenerating]);
+  console.log({ generated });
 
   return (
     <div style={{ background: "#f1f5f9", minHeight: "calc(100vh - 76px)" }}>
+      <BackArrowComp />
       <div className="container py-8">
         <h1 className="text-center">{topic}</h1>
         <button
@@ -55,9 +58,9 @@ const HtmlQuiz = () => {
         ) : null}
 
         <button
-          style={{ display: generated ? "flex" : "none !important" }}
+          style={{ display: generated ? "flex" : " none" }}
           onClick={() => setisQuizing(true)}
-          className="btn mb-4 btn-light-success mx-auto  text-success"
+          className={`btn mb-4 btn-light-success mx-auto ${""}  text-success`}
         >
           Start Quiz
         </button>
