@@ -2,13 +2,14 @@
 
 import { useRouter } from "next/navigation";
 
-import html from "../../imgs/html.svg";
-import css from "../../imgs/css.svg";
-import javascript from "../../imgs/javascript.svg";
-import bootstrap from "../../imgs/bootstrap.svg";
-import gatsby from "../../imgs/gatsby.svg";
-import react from "../../imgs/react.svg";
-import angular from "../../imgs/angular.svg";
+import HtmlImg from "../../imgs/path/path-html.svg";
+import CssImg from "../../imgs/path/path-css.svg";
+import JsImg from "../../imgs/path/path-javascript.svg";
+import BootstrapImg from "../../imgs/path/path-bootstrap.svg";
+import ReactImg from "../../imgs/path/path-react.svg";
+import AngularImg from "../../imgs/path/path-angular.svg";
+import GatsbyImg from "../../imgs/path/path-gatsby.svg";
+import Image from "next/image";
 
 const TechnoList = () => {
   const router = useRouter();
@@ -57,7 +58,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img src={html} alt="html" className="avatar-md" />
+                    <Image src={HtmlImg} alt="html" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -89,7 +90,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img src={css} alt="css" className="avatar-md" />
+                    <Image src={CssImg} alt="css" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -97,7 +98,7 @@ const TechnoList = () => {
                         href="course-path-single.html"
                         className="text-inherit"
                       >
-                        Advanced CSS course
+                        CSS course
                       </a>
                     </h4>
                     <p className="mb-0 fs-6">
@@ -121,11 +122,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img
-                      src={javascript}
-                      alt="javascript"
-                      className="avatar-md"
-                    />
+                    <Image src={JsImg} alt="javascript" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -157,8 +154,8 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img
-                      src={bootstrap}
+                    <Image
+                      src={BootstrapImg}
                       alt="bootstrap"
                       className="avatar-md"
                     />
@@ -193,7 +190,11 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img src={angular} alt="angular" className="avatar-md" />
+                    <Image
+                      src={AngularImg}
+                      alt="angular"
+                      className="avatar-md"
+                    />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -225,7 +226,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img src={gatsby} alt="gatsby" className="avatar-md" />
+                    <Image src={GatsbyImg} alt="gatsby" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
@@ -256,7 +257,7 @@ const TechnoList = () => {
               <div className="d-flex justify-content-between align-items-center p-4">
                 <div className="d-flex">
                   <a href="course-path-single.html">
-                    <img src={react} alt="react" className="avatar-md" />
+                    <Image src={ReactImg} alt="react" className="avatar-md" />
                   </a>
                   <div className="ms-3">
                     <h4 className="mb-1">
