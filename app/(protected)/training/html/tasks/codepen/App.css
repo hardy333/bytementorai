@@ -1,0 +1,26 @@
+.code-mirrors-container {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 2px;
+  /* display: none; */
+  padding-inline: 10px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.code-mirror-full-box {
+  border-radius: 10px;
+  flex-grow: 1;
+  width: 0%;
+}
+
+.code-mirror-heading {
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.code-mirror-card {
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 16px;
+}

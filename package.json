@@ -18,6 +18,14 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "@codemirror/lang-css": "^6.2.1",
+    "@codemirror/lang-html": "^6.4.6",
+    "@codemirror/lang-javascript": "^6.2.1",
+    "@uiw/codemirror-theme-okaidia": "^4.21.21",
+    "@uiw/codemirror-theme-xcode": "^4.21.21",
+    "@uiw/react-codemirror": "^4.21.19",
+    "react-code-blocks": "^0.1.4",
+    "react-syntax-highlighter": "^15.5.0"
   }
 }
