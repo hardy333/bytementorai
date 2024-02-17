@@ -55,8 +55,6 @@ const QuizSection = ({ isQuizing, setisQuizing }) => {
   console.log({ selectedAnsw });
   const validateAnswer = () => {};
 
-  console.log({ selectedAnsw });
-
   return (
     <>
       <div id="test-l-1" role="tabpanel" className="bs-stepper-pane ">

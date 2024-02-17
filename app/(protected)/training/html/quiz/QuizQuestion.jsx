@@ -9,15 +9,17 @@ const QuizQuestion = ({
   questionCompleted,
 }) => {
   const handleClick = (index) => {
+    if (questionCompleted) return;
     setSelectedAnsw(index);
   };
 
   let isCorrect = false;
-  if (selectedAnsw) {
+  if (Number.isInteger(selectedAnsw)) {
     isCorrect = questions[currQ].options[selectedAnsw].isCorrect;
   }
+  console.log(questions);
 
-  console.log({ isCorrect });
+  console.log({ isCorrect, currQ, selectedAnsw, questionCompleted });
 
   return (
     <>
